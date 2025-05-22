@@ -14,6 +14,9 @@ while (feedback!="c"):
     elif(feedback=="h"):
         high=computer_guess-1
         chance+=1
-    elif(feedback!='c' or 'l' or 'h'):
+    elif (feedback=="c"):
+        print(f"You guessed it at {chance} try  👍")
+        break
+    else:
         print("Invalid option")
-print(f"You guessed it at {chance} try  👍")
+
